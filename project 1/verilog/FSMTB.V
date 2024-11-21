@@ -92,14 +92,11 @@ initial begin
     #1200;  // Wait for the program to complete
     soap = 0;
 
-
     // Test HOT_WASH program
     add_soap;
     select_program(3'b001);  // HOT_WASH
     #1200;
     soap = 0;
-
-
 
     // Test RINSING_DRY program
     select_program(3'b010);  // RINSING_DRY
